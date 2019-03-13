@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package gRPC.Message; 
+option csharp_namespace = "gRPC.Message";
+import "message.proto";
+
+service gRPCService {
+  rpc SayHello(HelloRequest) returns (Response);
+  rpc SayGoodbye(GoodByeRequest) returns (Response);
+}

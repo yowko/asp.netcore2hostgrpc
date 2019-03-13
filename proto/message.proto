@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package gRPC.Message;
+option csharp_namespace = "gRPC.Message";
+import "google/protobuf/timestamp.proto";
+
+message HelloRequest{
+    string Name=1;
+    google.protobuf.Timestamp SendDate=2;
+}
+
+message GoodByeRequest{
+    string Name=1;
+}
+
+message Response{
+    bool IsSuccess=1;
+    string ResponseMsg=2;
+}
