@@ -13,4 +13,7 @@
       <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="2.2.0" />
       <PackageReference Include="OpenTracing.Contrib.Grpc" Version="0.1.0" />
     </ItemGroup>
+    <ItemGroup>
+        <Protobuf Include="../../proto/*.proto" OutputDir="%(RelativePath)" CompileOutputs="false" />
+    </ItemGroup>
 </Project>
